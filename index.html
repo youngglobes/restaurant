@@ -14,6 +14,22 @@
 
 	</head>
 	
+		<script>
+				
+var menu = document.querySelector('.header_2')
+var menuPosition = menu.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= menuPosition) {
+        menu.style.position = 'fixed';
+        menu.style.top = '0px';
+    } else {
+        menu.style.position = 'static';
+        menu.style.top = '';
+    }
+});
+		</script>
+
+
 	<body>
 		<div id="top"></div>
 		<div class="container">
@@ -26,7 +42,8 @@
 							<p class="header_1_1_style_2">Template</p></a>
 						</div>
 						<div class="header_1_2">
-							<div style="padding-left:160px"><p style="float:left;font-family:Source Sans Pro">&nbsp;&nbsp;&nbsp;&nbsp; Questions? Call us Toll-free! &nbsp&nbsp&nbsp&nbsp <p style="float:left;color:#e24425;font-weight:bold;font-family:Source Sans Pro">1800-0000-7777</p> <p style="float:left;font-family:Source Sans Pro"> &nbsp;(11AM to 11PM)</p></div>
+							<div style="padding-left:160px"><p style="float:left;font-family:Source Sans Pro">&nbsp;&nbsp;&nbsp;&nbsp; Questions? Call us Toll-free! &nbsp;&nbsp;&nbsp;&nbsp; <p style="float:left;color:#e24425;font-weight:bold;font-family:Source Sans Pro">1800-0000-7777</p> <p style="float:left;font-family:Source Sans Pro"> &nbsp;(11AM to 11PM)
+							</p></div>
 						</div>
 					</div>
 					</div>
@@ -54,7 +71,7 @@
 					</div>
 					</div>
 			
-			<div class="spacer"></div>
+			<!--div class="spacer"></div-->
 			
 			
 			<div class="bgimage_bg bg">
@@ -309,7 +326,7 @@
 							<li class="footer_col_header">Site Links</li>
 							<li class="footer_line">About Us</li>
 							<li class="footer_line">Contact Us</li>
-							<li class="footer_line">Privacy Policy<</li>
+							<li class="footer_line">Privacy Policy></li>
 							<li style="padding-top:10px">Terms of Use</li>
 						</ul>	
 					</div>
